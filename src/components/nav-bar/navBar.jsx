@@ -8,13 +8,13 @@ const NavBar = () => {
       <div className="nav-container">
         <div className="logo-container">
           <a className="brand" href="#">
-            <img src={logo} alt="" width="40" height="32" />
+            <img src={logo} alt="" width="65" height="52" />
           </a>
-          <div className="navbar-nav logo-name">Family Hub</div>
+          {/* <div className="navbar-nav logo-name">Family Hub</div> */}
         </div>
         <div className="menu">
           <div className="menu-item">
-            <a>Register</a>
+            <a className="register-link">Register</a>
           </div>
           <div className="menu-item">
             <a>Login</a>

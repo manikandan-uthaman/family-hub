@@ -1,15 +1,17 @@
-import logo from './assets/images/logo_main.png';
 import './App.scss';
 import NavBar from './components/nav-bar/navBar';
+import Home from './components/home/home';
+import { Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
     <div className="app">
       <NavBar></NavBar>
-      <header className="app-header">
-        <img src={logo} className="app-logo" alt="logo" />
-        <p className="h1">Family Hub Project</p>
-      </header>
+      <div className="content">
+        <Switch>
+          <Route path="/" component={Home} />
+        </Switch>
+      </div>
     </div>
   );
 }
