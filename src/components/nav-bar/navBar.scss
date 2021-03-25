@@ -1,7 +1,7 @@
 @import '../../assets/styles/variables';
 
 .nav-container {
-  margin: 1rem;
+  margin: 2rem;
   display: flex;
   justify-content: space-between;
 }
@@ -12,11 +12,11 @@
 }
 
 .logo-name {
-  padding-left: 1rem;
+  padding-left: 2rem;
   color: $font-color-primary;
   font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 0.5rem;
+  letter-spacing: 1rem;
 }
 
 .menu {
@@ -26,9 +26,22 @@
 
 .menu-item {
   padding: 0 1rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 500;
   a {
     cursor: pointer;
+  }
+}
+
+.register-link {
+  color: #ff0000;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo-name {
+    display: none;
+  }
+  .nav-container {
+    margin-bottom: 4rem;
   }
 }
