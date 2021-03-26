@@ -110,12 +110,18 @@
     font-weight: 500;
   }
   .feature-desc-heading {
+    color: $font-color-primary;
+    text-decoration: none;
+    cursor: unset;
     font-size: 3rem;
     font-weight: 600;
   }
   .link {
     text-decoration: underline;
     cursor: pointer;
+    &:visited {
+      color: $font-color-primary;
+    }
   }
 
   .feature-desc {

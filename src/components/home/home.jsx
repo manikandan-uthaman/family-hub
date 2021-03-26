@@ -68,15 +68,16 @@ const Home = ({ user }) => {
                   />
                 </div>
                 <div className="feature-description">
-                  <p
+                  <NavLink
                     className={
                       user
                         ? 'feature-desc-heading link'
                         : 'feature-desc-heading'
                     }
+                    to="/click"
                   >
                     Click
-                  </p>
+                  </NavLink>
                   <p className="feature-desc">Relive the moments</p>
                 </div>
               </div>
@@ -93,15 +94,16 @@ const Home = ({ user }) => {
                   />
                 </div>
                 <div className="feature-description">
-                  <p
+                  <NavLink
                     className={
                       user
                         ? 'feature-desc-heading link'
                         : 'feature-desc-heading'
                     }
+                    to="/shop"
                   >
                     Shop
-                  </p>
+                  </NavLink>
                   <p className="feature-desc">Your grocery list</p>
                 </div>
               </div>
@@ -116,15 +118,16 @@ const Home = ({ user }) => {
                   />
                 </div>
                 <div className="feature-description">
-                  <p
+                  <NavLink
                     className={
                       user
                         ? 'feature-desc-heading link'
                         : 'feature-desc-heading'
                     }
+                    to="/work"
                   >
                     Work
-                  </p>
+                  </NavLink>
                   <p className="feature-desc">Track your tasks</p>
                 </div>
               </div>

@@ -27,6 +27,9 @@ async function post(url, data) {
       generateError(400, 'Username or Password is incorrect')
     );
   }
+  if (url.startsWith('/register')) {
+    return Promise.reject({ token: 'auth_token' });
+  }
 }
 
 const httpService = { post };

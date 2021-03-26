@@ -5,7 +5,8 @@ import Home from './components/home/home';
 import Login from './components/login/login';
 import auth from './services/authService';
 import './App.scss';
-import Logout from './components/Logout/logout';
+import Logout from './components/logout/logout';
+import Register from './components/register/register';
 
 class App extends Component {
   state = {};
@@ -24,6 +25,7 @@ class App extends Component {
           <Switch>
             <Route path="/login" component={Login} />
             <Route path="/logout" component={Logout} />
+            <Route path="/register" component={Register} />
             <Route
               path="/"
               render={(props) => <Home {...props} user={user} />}

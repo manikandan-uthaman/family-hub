@@ -1,0 +1,43 @@
+button {
+  cursor: pointer;
+  &:disabled {
+    cursor: unset;
+  }
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.form {
+  width: 30%;
+  padding: 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+.error-div {
+  text-align: left;
+}
+
+.register-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  p {
+    margin: 0;
+    font-weight: 100;
+  }
+  .desc-heading {
+    font-size: 4rem;
+  }
+  .desc {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
