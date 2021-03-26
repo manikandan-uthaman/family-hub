@@ -5,8 +5,9 @@ import meet from '../../assets/images/meet.png';
 import camera from '../../assets/images/camera.png';
 import shopping from '../../assets/images/shopping.png';
 import todo from '../../assets/images/todo.png';
+import { NavLink } from 'react-router-dom';
 
-const Home = () => {
+const Home = ({ user }) => {
   return (
     <div className="home-container">
       <div className="main-container">
@@ -27,7 +28,7 @@ const Home = () => {
             <div className="logo-description">
               <p className="desc-heading">Family Hub</p>
               <p className="desc">Different feature to explore</p>
-              <button className="btn btn-danger">Signup</button>
+              {!user && <button className="btn btn-danger">Signup</button>}
             </div>
           </div>
           <div className="features-right">
@@ -43,7 +44,16 @@ const Home = () => {
                   />
                 </div>
                 <div className="feature-description">
-                  <p className="feature-desc-heading">Meet</p>
+                  <NavLink
+                    className={
+                      user
+                        ? 'feature-desc-heading link'
+                        : 'feature-desc-heading'
+                    }
+                    to="/"
+                  >
+                    Meet
+                  </NavLink>
                   <p className="feature-desc">A family calendar</p>
                 </div>
               </div>
@@ -58,7 +68,15 @@ const Home = () => {
                   />
                 </div>
                 <div className="feature-description">
-                  <p className="feature-desc-heading">Click</p>
+                  <p
+                    className={
+                      user
+                        ? 'feature-desc-heading link'
+                        : 'feature-desc-heading'
+                    }
+                  >
+                    Click
+                  </p>
                   <p className="feature-desc">Relive the moments</p>
                 </div>
               </div>
@@ -75,7 +93,15 @@ const Home = () => {
                   />
                 </div>
                 <div className="feature-description">
-                  <p className="feature-desc-heading">Shop</p>
+                  <p
+                    className={
+                      user
+                        ? 'feature-desc-heading link'
+                        : 'feature-desc-heading'
+                    }
+                  >
+                    Shop
+                  </p>
                   <p className="feature-desc">Your grocery list</p>
                 </div>
               </div>
@@ -90,7 +116,15 @@ const Home = () => {
                   />
                 </div>
                 <div className="feature-description">
-                  <p className="feature-desc-heading">Work</p>
+                  <p
+                    className={
+                      user
+                        ? 'feature-desc-heading link'
+                        : 'feature-desc-heading'
+                    }
+                  >
+                    Work
+                  </p>
                   <p className="feature-desc">Track your tasks</p>
                 </div>
               </div>

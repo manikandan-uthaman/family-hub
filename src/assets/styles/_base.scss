@@ -1,2 +1,37 @@
 // @import '~bootstrap/scss/bootstrap.scss';
 @import '~font-awesome/scss/font-awesome.scss';
+
+.btn {
+  display: inline;
+  border: none;
+  border-radius: 0;
+  padding: 0.5rem 1.5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+
+.btn-danger {
+  background-color: #f0483e;
+  color: #ffffff;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  color: #ffffff;
+  &:disabled {
+    background-color: #86b7fe;
+  }
+}
+
+.btn-rounded {
+  border-radius: 0.5rem;
+}
+
+.error-msg {
+  font-size: 1.5rem;
+  color: red;
+}

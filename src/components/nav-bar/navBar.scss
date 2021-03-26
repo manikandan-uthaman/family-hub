@@ -34,7 +34,12 @@
 }
 
 .register-link {
-  color: #ff0000;
+  color: #ff0000 !important;
+}
+
+.link {
+  text-decoration: none;
+  color: $font-color-primary;
 }
 
 @media only screen and (max-width: 600px) {

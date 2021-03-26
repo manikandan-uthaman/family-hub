@@ -94,24 +94,6 @@
   width: 50%;
 }
 
-.btn {
-  display: inline;
-  border: none;
-  border-radius: 0;
-  padding: 0.5rem 1.5rem;
-  &:focus {
-    border: none;
-    outline: none;
-  }
-}
-
-.btn-danger {
-  background-color: #f0483e;
-  color: #ffffff;
-  font-size: 2rem;
-  font-weight: 500;
-}
-
 .feature-logo {
   display: flex;
   align-items: center;
@@ -131,6 +113,11 @@
     font-size: 3rem;
     font-weight: 600;
   }
+  .link {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
   .feature-desc {
     font-size: 2rem;
     // margin-bottom: 1rem;
