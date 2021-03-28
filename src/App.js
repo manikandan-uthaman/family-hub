@@ -11,12 +11,13 @@ import ProtectedRoute from './components/common/protectedRoute';
 import Shop from './components/shop/shop';
 
 class App extends Component {
-  state = {};
-
+  state = {}
   componentDidMount() {
     const user = auth.getCurrentUser();
     this.setState({ user });
   }
+
+  testList() {}
 
   render() {
     const { user } = this.state;
