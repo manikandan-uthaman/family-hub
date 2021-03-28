@@ -2,13 +2,13 @@
 
 name: CI
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -37,4 +37,4 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: ESLint Plus
-	uses: bradennapier/eslint-plus-action@v3
+        uses: bradennapier/eslint-plus-action@v3
