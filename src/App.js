@@ -10,7 +10,7 @@ import Register from './components/register/register';
 import ProtectedRoute from './components/common/protectedRoute';
 import Shop from './components/shop/shop';
 
-class App extends Component {
+class App extends Component {     
   state = {}
   componentDidMount() {
     const user = auth.getCurrentUser();
@@ -40,7 +40,7 @@ class App extends Component {
           </Switch>
         </div>
       </div>
-    );
+    )
   }
 }
 
