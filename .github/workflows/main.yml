@@ -12,6 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install modelus
-        run: npm
+        run: npm install
       - name: Run ESLint
-        run: npx eslint . --ext .js,.jsx,.ts,.tsx
+        run: eslint . --ext .js,.jsx,.ts,.tsx
