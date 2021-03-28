@@ -4,11 +4,11 @@ import NavBar from './components/nav-bar/navBar';
 import Home from './components/home/home';
 import Login from './components/login/login';
 import auth from './services/authService';
-import './App.scss';
 import Logout from './components/logout/logout';
 import Register from './components/register/register';
 import ProtectedRoute from './components/common/protectedRoute';
 import Shop from './components/shop/shop';
+import './App.scss';
 
 const a = 1;
 class App extends Component {     
