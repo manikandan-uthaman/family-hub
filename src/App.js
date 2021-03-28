@@ -9,6 +9,7 @@ import Logout from './components/logout/logout';
 import Register from './components/register/register';
 import ProtectedRoute from './components/common/protectedRoute';
 import Shop from './components/shop/shop';
+import Todo from './components/todo/todo';
 
 class App extends Component {
   state = {};
@@ -31,6 +32,10 @@ class App extends Component {
             <ProtectedRoute
               path="/shop"
               render={(props) => <Shop {...props} />}
+            ></ProtectedRoute>
+            <ProtectedRoute
+              path="/todo"
+              render={(props) => <Todo {...props} />}
             ></ProtectedRoute>
             <Route
               path="/"
