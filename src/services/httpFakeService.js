@@ -26,14 +26,6 @@ function addItems(data) {
   items.push(item);
 }
 
-function sleep(milliseconds) {
-  const date = Date.now();
-  let currentDate = null;
-  do {
-    currentDate = Date.now();
-  } while (currentDate - date < milliseconds);
-}
-
 function generateError(status, message) {
   return {
     response: {
@@ -44,7 +36,6 @@ function generateError(status, message) {
 }
 
 async function post(url, data) {
-  // sleep(2000);
   if (url.startsWith('/login')) {
     if (data.username === 'admin@test.com' && data.password === 'admin')
       return Promise.resolve({ token: 'auth_token' });
@@ -68,7 +59,6 @@ async function post(url, data) {
 }
 
 async function get(url) {
-  // sleep(2000);
   if (url.startsWith('/shop-list')) {
     return Promise.resolve({ items: items });
   }
