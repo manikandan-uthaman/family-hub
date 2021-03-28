@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import Input from '../input/input';
+import Select from '../select/select';
 import './form.scss';
 
 /*
@@ -72,6 +73,20 @@ class Form extends Component {
         handleChange={this.handleChange}
       ></Input>
     );
+  }
+
+  renderSelect(name, label, options) {
+    const { data, errors } = this.state;
+    return (
+      <Select
+        label={label}
+        name={name}
+        value={data[name]}
+        options={options}
+        error={errors[name]}
+        handleChange={this.handleChange}
+    ></Select>
+    )
   }
 }
 

@@ -124,7 +124,7 @@ const Home = ({ user }) => {
                         ? 'feature-desc-heading link'
                         : 'feature-desc-heading'
                     }
-                    to="/work"
+                    to="/todo"
                   >
                     Work
                   </NavLink>
