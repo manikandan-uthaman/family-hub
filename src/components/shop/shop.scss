@@ -1,0 +1,105 @@
+@import '../../assets/styles/variables';
+
+.shop-heading {
+  color: $font-color-primary;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 1rem;
+}
+
+.shop-sub-heading {
+  color: $font-color-primary;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+}
+
+.shopping-table {
+  width: 70%;
+  border-collapse: collapse;
+  .number {
+    width: 10%;
+  }
+
+  thead {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .border {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .details {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  tbody > tr > td:nth-of-type(2) {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  th,
+  td {
+    padding: 1rem;
+  }
+}
+
+.check-div {
+  height: 2rem;
+  width: 2rem;
+  background-color: #f0483e;
+  border-radius: 15px;
+}
+
+.check-div::after {
+  content: '✔';
+  display: inline-block;
+  color: #ffffff;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.uncheck-div {
+  background: #ffffff;
+  border-radius: 50%;
+  height: 1.1rem;
+  width: 1.1rem;
+  position: relative;
+  box-shadow: 0 0 0 0.5rem #f0483e;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.shopping-container {
+  .error-msg {
+    display: none;
+  }
+
+  .form-group {
+    margin: 0;
+  }
+
+  .form-input {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+.last-row > td {
+  padding: 2rem;
+}
+
+.delete {
+  font-size: 2.2rem;
+  color: #f0483e;
+  cursor: pointer;
+}

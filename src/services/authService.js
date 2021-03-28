@@ -25,6 +25,7 @@ function getCurrentUser() {
   return {
     username: 'admin@test.com',
     name: 'Admin',
+    familyId: 1,
   };
 }
 

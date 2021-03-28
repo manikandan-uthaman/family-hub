@@ -7,6 +7,8 @@ import auth from './services/authService';
 import './App.scss';
 import Logout from './components/logout/logout';
 import Register from './components/register/register';
+import ProtectedRoute from './components/common/protectedRoute';
+import Shop from './components/shop/shop';
 
 class App extends Component {
   state = {};
@@ -26,6 +28,10 @@ class App extends Component {
             <Route path="/login" component={Login} />
             <Route path="/logout" component={Logout} />
             <Route path="/register" component={Register} />
+            <ProtectedRoute
+              path="/shop"
+              render={(props) => <Shop {...props} />}
+            ></ProtectedRoute>
             <Route
               path="/"
               render={(props) => <Home {...props} user={user} />}
