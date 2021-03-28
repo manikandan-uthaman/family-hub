@@ -10,11 +10,13 @@ import Register from './components/register/register';
 import ProtectedRoute from './components/common/protectedRoute';
 import Shop from './components/shop/shop';
 
+const a = 1;
 class App extends Component {     
   state = {}
   componentDidMount() {
     const user = auth.getCurrentUser();
-    this.setState({ user });
+    this.setState({ user        });
+    console.log("TEST ESLINT")
   }
 
   testList() {}
