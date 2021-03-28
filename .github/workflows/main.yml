@@ -37,4 +37,4 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: ESLint Plus
-	    uses: bradennapier/eslint-plus-action@v3
+	uses: bradennapier/eslint-plus-action@v3
