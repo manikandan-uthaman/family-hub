@@ -97,6 +97,7 @@ class Todo extends Component {
                       name="assignedTo"
                       value={item.assignedTo}
                       options={this.state.members}
+                      disabled={item.completed}
                       handleChange={(e) => this.handleChange(item, e)}
                     ></Select>
                   </td>
