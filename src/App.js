@@ -10,6 +10,7 @@ import Register from './components/register/register';
 import ProtectedRoute from './components/common/protectedRoute';
 import Shop from './components/shop/shop';
 import Todo from './components/todo/todo';
+import Gallery from './components/gallery/gallery';
 
 class App extends Component {
   state = {};
@@ -36,6 +37,10 @@ class App extends Component {
             <ProtectedRoute
               path="/todo"
               render={(props) => <Todo {...props} />}
+            ></ProtectedRoute>
+            <ProtectedRoute
+              path="/gallery"
+              render={(props) => <Gallery {...props} />}
             ></ProtectedRoute>
             <Route
               path="/"

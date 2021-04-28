@@ -1,0 +1,177 @@
+@import '../../assets/styles/variables';
+
+.gallery-heading {
+  color: $font-color-primary;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 1rem;
+}
+
+.gallery-sub-heading {
+  color: $font-color-primary;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.upload-container {
+  opacity: 0;
+  visibility: hidden;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-form {
+  background-color: #ffffff;
+  position: relative;
+  padding: 3rem;
+}
+
+.upload-container:target {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.popup-container {
+  opacity: 0;
+  visibility: hidden;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  transition: all 0.5s;
+}
+
+.popup-container:target {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.popup-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  &:hover {
+    color: rgba(0, 0, 0, 1);
+  }
+}
+
+.image-container {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 1.5rem;
+}
+
+.previous,
+.next {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.image-div {
+  margin: 2rem 1rem;
+}
+
+.gallery-img {
+  width: 100%;
+}
+
+.content::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.outer-row {
+  height: 70vh;
+  padding: 0 1rem;
+}
+
+.inner-row {
+  height: 35vh;
+}
+
+.photo-col-left {
+  width: 30%;
+}
+
+.photo-col-right {
+  width: 70%;
+}
+
+.photo-col {
+  overflow: hidden;
+  margin: 1rem;
+  img {
+    object-fit: cover;
+  }
+}
+
+.inner-row .photo-col {
+  width: 50%;
+}
+
+.upload-label {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 1);
+    transform: translateY(-0.3rem) scale(1.1);
+  }
+  &:active {
+    transform: translateY(-0.2rem);
+  }
+}
+
+.upload-plus {
+  display: inline-block;
+  position: relative;
+  margin-top: 1.5rem;
+  font-size: 4rem;
+  color: #000000;
+}
+
+.hide {
+  display: none;
+}

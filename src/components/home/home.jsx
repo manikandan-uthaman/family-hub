@@ -74,7 +74,7 @@ const Home = ({ user }) => {
                         ? 'feature-desc-heading link'
                         : 'feature-desc-heading'
                     }
-                    to="/click"
+                    to="/gallery"
                   >
                     Click
                   </NavLink>
